@@ -1,0 +1,124 @@
+{  
+        if(t==0){ 
+            location="http://www.weather.com.cn/#404"; //#è®¾å®è·³è½¬çé¾æ¥å°å 
+        } 
+        document.getElementById('show').innerHTML=""+t+""; // æ¾ç¤ºåè®¡æ¶ 
+        t--; // è®¡æ°å¨éå 
+        //æ¬æè½¬èªï¼ 
+    } 
+    </script> 
+<style>
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, p, blockquote, th, td, article, aside, summary, details, figcaption, figure, footer, header, hgroup, menu, nav, section { margin:0; padding:0 }
+article, aside, summary, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display:block }
+table { border-collapse:collapse; border-spacing:0 }
+fieldset, img { border:0; vertical-align:middle }
+address, caption, cite, code, dfn, em, strong, th, var { font-style:normal; font-weight:normal }
+ul, ol { list-style:outside none none }
+q:before, q:after { content:'' }
+abbr, acronym { border:0 }
+input, button, select { vertical-align:middle }
+.fl { float:left; display:inline }
+.fr { float:right; display:inline }
+body { background-color:#fff; background-attachment:fixed; background-position:center top; background-repeat:no-repeat; padding:0; margin:0; border:0; font:14px/1.6 "Microsoft Yahei", "Tahoma", "SimSun" }
+* { padding:0; margin:0; border:0 }
+ul { list-style:none }
+a { text-decoration:none; color:#252525 }
+a:hover { color:#ee842f }
+.clear { clear:both; height:0; overflow:hidden }
+nav { display:block }
+table { border-collapse:collapse }
+h1, h, h3, h4, h5, h6 { font-weight:normal }
+.clearfix { zoom:1 }
+.clearfix:after { content:"."; display:block; clear:both; visibility:hidden; height:0 }
+body { color:#666666; }
+i { font-style:normal; }
+.nide { width:1000px; margin:0 auto; }
+.cuo { width:885px; margin:0 auto 60px; }
+.cuo h1 { color:#636060; height:290px; line-height:290px; font-size:40px; font-weight:bold; }
+.cuo h1 span { font-weight:bold; padding-right:20px; font-size:100px; }
+.cuo p { margin-bottom:20px; font-size:23px; }
+.cuo p a { color:#16459a; }
+.cuo p a:hover{ color:#ee842f; }
+.zuo ul li a img { width:155px; height:120px; }
+.zuo { width:1021px; float:left; }
+.zuo ul li { float:left; width:155px; text-align:center; height:120px; margin-right:15px; display:inline; }
+.zuo ul li a { margin-bottom:10px; display:block; width:155px; }
+.zuo ul { width:340px; float:left; }
+#search .midBlock { position:relative; z-index:99; width:1000px; margin:0 auto; }
+#search { height:64px; margin:16px auto; height:64px; border-bottom:3px solid #ccc; }
+#search .midBlock .selCity { position:absolute; width:210px; height:120px; top:0px; left:390px; background-color:#ebebeb; padding:0px 20px 20px 20px; display:none; }
+#search .midBlock .selCity p { text-align:left; }
+#search .midBlock .selCity p.droplist { line-height:25px; z-index:99; position:relative; }
+#search .midBlock .selCity p.title { color:#076EA8; }
+#search h1 { display:block; float:left; width:140px; margin-top:15px; margin-right:10px; overflow:hidden; }
+body { color:#666666; }
+i { font-style:normal; }
+.nide { width:1000px; margin:0 auto; }
+.cuo { width:885px; margin:0 auto 60px; }
+.cuo h1 { color:#636060; height:290px; line-height:290px; font-size:40px; font-weight:bold; }
+.cuo h1 span { font-weight:bold; padding-right:20px; font-size:100px; }
+.cuo p { margin-bottom:20px; font-size:23px; }
+.cuo p a { color:#16459a; }
+.zuo ul li a img { width:155px; height:120px; }
+.zuo { width:1021px; float:left; }
+.zuo ul li { float:left; width:155px; text-align:center; height:120px; margin-right:15px; display:inline; }
+.zuo ul li a { margin-bottom:10px; display:block; width:155px; }
+.zuo ul { width:340px; float:left; }
+#search .midBlock { position:relative; z-index:99; width:1000px; margin:0 auto; }
+#search { height:64px; margin:16px auto; height:64px; border-bottom:3px solid #ccc; }
+#search .midBlock .selCity { position:absolute; width:210px; height:120px; top:0px; left:390px; background-color:#ebebeb; padding:0px 20px 20px 20px; display:none; }
+#search .midBlock .selCity p { text-align:left; }
+#search .midBlock .selCity p.droplist { line-height:25px; z-index:99; position:relative; }
+#search .midBlock .selCity p.title { color:#076EA8; }
+#search h1 { display:block; float:left; width:140px; height:35px; background:url(http://i.tq121.com.cn/i/index/logo_notfound.jpg); margin-top:15px; margin-right:10px; overflow:hidden; }
+#search h1 a { display:block; width:140px; height:35px; text-indent:-9999px; }
+#txtZip { font-size: 14px; height: 35px; line-height: 35px; padding-left:10px; background:none; color: #6bb0da; margin-top: 2px; text-indent: 4px; width: 285px; }
+#btnZip { background: none; cursor: pointer; height: 23px; text-indent: -9999px; width: 42px; }
+</style>
+</head>
+
+<body>
+<div id="search">
+  <div class="midBlock">
+    <h1> <a title="ä¸­å½å¤©æ°ç½" href="http://www.weather.com.cn">ä¸­å½å¤©æ°</a> </h1>
+  </div>
+</div>
+<div class="nide">
+  <div class="cuo">
+    <h1><span><i style="color:#dd8d8d;">4</i><i style="color:#84b998">0</i><i style="color:#84adc2;">4</i></span>æ¨è®¿é®çé¡µé¢ä¸å­å¨</h1>
+
+    <p>  <span id="show">5</span>ç§åèªå¨è¿å <a href="http://www.weather.com.cn">ä¸­å½å¤©æ°ç½é¦é¡µ</a></p>   
+ <p>æèççä¸é¢çç¾å¾å§ï¼</p>
+  </div>
+  <div class="zuo">
+<ul><li><a href="http://p.weather.com.cn/2023/03/3609991.shtml"  target="_blank" title="æµæ±éåè¡å¤´ä¸æ¼âæ¨±è±é¨â è½è±ç¼¤çº·æ¥æ»¡å°"><img alt="æµæ±éåè¡å¤´ä¸æ¼âæ¨±è±é¨â è½è±ç¼¤çº·æ¥æ»¡å°" src="http://pic.weather.com.cn/images/cn/photo/2023/03/25/202303251100258FFAD1AD174B496DC2BB99E657F5AEBF_s.jpg" target="_blank"></a><a href="http://p.weather.com.cn/2023/03/3609991.shtml"  target="_blank" title="æµæ±éåè¡å¤´ä¸æ¼âæ¨±è±é¨â è½è±ç¼¤çº·æ¥æ»¡å°">æµæ±éåè¡å¤´ä¸æ¼âæ¨±è±é¨â è½è±ç¼¤çº·æ¥æ»¡å°</a></li><li><a href="http://p.weather.com.cn/2023/03/3609969.shtml"  target="_blank" title="è¾½å®ä¸¹ä¸å°åè±ç»½æ¾ éç¿ç¿çè±æµä¸ºå¤§å°æ·»è²"><img alt="è¾½å®ä¸¹ä¸å°åè±ç»½æ¾ éç¿ç¿çè±æµä¸ºå¤§å°æ·»è²" src="http://pic.weather.com.cn/images/cn/photo/2023/03/25/202303251010279061705A7FB8D8C0FF39AFB9BFFF46AD_s.jpg" target="_blank"></a><a href="http://p.weather.com.cn/2023/03/3609969.shtml"  target="_blank" title="è¾½å®ä¸¹ä¸å°åè±ç»½æ¾ éç¿ç¿çè±æµä¸ºå¤§å°æ·»è²">è¾½å®ä¸¹ä¸å°åè±ç»½æ¾ éç¿ç¿çè±æµä¸ºå¤§å°æ·»è²</a></li></ul>
+
+<ul><li><a href="http://p.weather.com.cn/2023/03/3610019.shtml"  target="_blank" title="æµªæ¼«ï¼âææ©éæâå¤©è±¡å¥è§äº®ç¸æå½å¤©å®"><img alt="æµªæ¼«ï¼âææ©éæâå¤©è±¡å¥è§äº®ç¸æå½å¤©å®" src="http://pic.weather.com.cn/images/cn/photo/2023/03/25/202303251211199C94EAF8099CDB86A9E962CE7DE9E5E4_s.jpg" target="_blank"></a><a href="http://p.weather.com.cn/2023/03/3610019.shtml"  target="_blank" title="æµªæ¼«ï¼âææ©éæâå¤©è±¡å¥è§äº®ç¸æå½å¤©å®">æµªæ¼«ï¼âææ©éæâå¤©è±¡å¥è§äº®ç¸æå½å¤©å®</a></li><li><a href="http://p.weather.com.cn/2023/02/3602735.shtml"  target="_blank" title="æ°çå¡ååºç°âå¹»æ¥âæ¯è§ å¥½ä¼¼å¤©ä¸âä¸ä¸ªå¤ªé³â"><img alt="æ°çå¡ååºç°âå¹»æ¥âæ¯è§ å¥½ä¼¼å¤©ä¸âä¸ä¸ªå¤ªé³â" src="http://pic.weather.com.cn/images/cn/photo/2023/02/27/202302271402584112B45DF3883515CE335CAC483E7989_s.jpg" target="_blank"></a><a href="http://p.weather.com.cn/2023/02/3602735.shtml"  target="_blank" title="æ°çå¡ååºç°âå¹»æ¥âæ¯è§ å¥½ä¼¼å¤©ä¸âä¸ä¸ªå¤ªé³â">æ°çå¡ååºç°âå¹»æ¥âæ¯è§ å¥½ä¼¼å¤©ä¸âä¸ä¸ªå¤ªé³â</a></li></ul>
+
+<ul><li><a href="http://p.weather.com.cn/2023/03/3609618.shtml"  target="_blank" title="å¹¿è¥¿ä¸æï¼ææ±ä¿æ¥è ä¸è¯¯åæ¶"><img alt="å¹¿è¥¿ä¸æï¼ææ±ä¿æ¥è ä¸è¯¯åæ¶" src="http://pic.weather.com.cn/images/cn/photo/2023/03/23/2023032315420237539D27D17CDE165B8C3C9D389BA659_s.jpg" target="_blank"></a><a href="http://p.weather.com.cn/2023/03/3609618.shtml"  target="_blank" title="å¹¿è¥¿ä¸æï¼ææ±ä¿æ¥è ä¸è¯¯åæ¶">å¹¿è¥¿ä¸æï¼ææ±ä¿æ¥è ä¸è¯¯åæ¶</a></li><li><a href="http://p.weather.com.cn/2023/03/3609579.shtml"  target="_blank" title="åå·è²è¾¾ï¼éªåç»çº¢ä¸çº¯ç½äº¤ç» éè°§å®å®"><img alt="åå·è²è¾¾ï¼éªåç»çº¢ä¸çº¯ç½äº¤ç» éè°§å®å®" src="http://pic.weather.com.cn/images/cn/photo/2023/03/23/202303231529126DFEF6F21BD0A1A361A5A908C52C656E_s.jpg" target="_blank"></a><a href="http://p.weather.com.cn/2023/03/3609579.shtml"  target="_blank" title="åå·è²è¾¾ï¼éªåç»çº¢ä¸çº¯ç½äº¤ç» éè°§å®å®">åå·è²è¾¾ï¼éªåç»çº¢ä¸çº¯ç½äº¤ç» éè°§å®å®</a></li></ul>
+
+  </div>
+</div>
+<script type="text/javascript" src="http://c.wrating.com/a1.js">
+</script>
+<script type="text/javascript">
+var vjAcc="860010-2099220100";
+var wrUrl="http://c.wrating.com/";
+vjTrack("");
+</script>
+<noscript>
+<img src="http://c.wrating.com/a.gif?a=&c=860010-2099220100" width="1" height="1"/>
+</noscript>
+  <script type="text/javascript">
+window._wat = window._wat || [];
+(function() {
+    var wm = document.createElement("script");
+    
+    wm.src = "http://analyse.weather.com.cn/js/v1/wa.js?site_id=1";
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(wm, s);
+})();
+</script>
+
+</body>
+</html>
